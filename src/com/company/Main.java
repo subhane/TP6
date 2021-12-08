@@ -11,5 +11,11 @@ public class Main {
         }
 
         System.out.println(division.division2(10,0));
+
+        try{
+            System.out.println(division.division3(3,0));
+        }catch (ArithmeticException e){
+            System.out.printf("Division impossible");
+        }
     }
 }

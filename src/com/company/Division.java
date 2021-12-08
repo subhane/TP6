@@ -17,4 +17,8 @@ public class Division {
         }
         return s;
     }
+
+    public double division3(int a, int b) throws ArithmeticException{
+        return a/b;
+    }
 }
