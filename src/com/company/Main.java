@@ -3,11 +3,13 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        Division division = new Division();
         try{
-            Division division = new Division(10,0);
-            System.out.println(division.division1());
+            System.out.println(division.division1(10,0));
         }catch (ArithmeticException e){
             System.out.println("Division impossible");
         }
+
+        System.out.println(division.division2(10,0));
     }
 }

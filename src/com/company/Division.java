@@ -4,12 +4,17 @@ public class Division {
     private int a;
     private int b;
 
-    public Division(int a, int b){
-        this.a = a;
-        this.b = b;
+    public double division1(int a, int b) throws ArithmeticException{
+        return a/b ;
     }
 
-    public double division1() throws ArithmeticException{
-        return a/b ;
+    public int division2(int a, int b){
+        int s = 0;
+        try{
+            s = a/b;
+        }catch (ArithmeticException e){
+            System.out.printf("Erreur de division");
+        }
+        return s;
     }
 }
